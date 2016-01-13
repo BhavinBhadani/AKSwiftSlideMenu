@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:AKSwiftSlideMenu.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>
