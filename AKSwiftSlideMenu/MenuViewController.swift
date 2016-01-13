@@ -64,11 +64,6 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     @IBAction func onCloseMenuClick(button:UIButton!){
-<<<<<<< HEAD
-=======
-        btnMenu.tag = 0
->>>>>>> b68eac00fd547395116b1e98b2bc47ed12bda979
-        
         if (self.delegate != nil) {
             var index = Int32(button.tag)
             if(button == self.btnCloseMenuOverlay){
@@ -76,18 +71,6 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
             }
             delegate?.slideMenuItemSelectedAtIndex(index)
         }
-<<<<<<< HEAD
-=======
-        
-        UIView.animateWithDuration(0.3, animations: { () -> Void in
-            self.view.frame = CGRectMake(-UIScreen.mainScreen().bounds.size.width, 0, UIScreen.mainScreen().bounds.size.width,UIScreen.mainScreen().bounds.size.height)
-            self.view.layoutIfNeeded()
-            self.view.backgroundColor = UIColor.clearColor()
-            }, completion: { (finished) -> Void in
-                self.view.removeFromSuperview()
-                self.removeFromParentViewController()
-        })
->>>>>>> b68eac00fd547395116b1e98b2bc47ed12bda979
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
